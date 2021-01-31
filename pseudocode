@@ -1,0 +1,38 @@
+DB SETUP:
+
+----------------------------In your schema.sql---------------------------
+Create a table for your database with the following fields:
+- id ----- PRIMARY KEY THAT AUTO INCREMENTS
+- burger_name (bucketlist item) --- STRING
+- devoured --- BOOLEAN VALUE
+
+----------------------------seeds.sql-------------------------------------
+INSERT INTO queries to populate burgers table with 3 entries
+Ex. id - 1     VEGAN BURGER    BOOLEAN
+
+copy all of this into mysql workbench.
+
+
+HTML SETUP (main.handlebars & index.handlebars)
+
+in main.html:
+Add standard HTMl setup and correct links to other folder and files.
+Use triple mustache to add {{{ body }}} body
+
+in index.html:
+add headings are create empty lists where burgers will appear.
+
+List 1:
+Burgers you want to eat
+*This will require a form with an id attached 
+*Need input tags with a type=text 
+*Submit button
+
+List 2: 
+Burgers that have been eaten aka "devoured"
+The burgers will be "pushed" to this list.
+
+
+
+
+
