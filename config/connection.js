@@ -2,16 +2,29 @@
 var mysql = require("mysql");
 
 // for local testing
-var connection = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "password",
-    database: "bucketlist_db"
-});
+// var connection = mysql.createConnection({
+//     host: "localhost",
+//     port: 3306,
+//     user: "root",
+//     password: "password",
+//     database: "bucketlist_db"
+// });
 
 // for Heroku
 // var connection = mysql.createConnection(process.env.JAWSDB_URL);
+
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+    host: process.env.host || 'localhost',
+    port: 3306,
+    user: process.env.user || 'root',
+    // NOTE: Be sure to add your MySQL password here! we defaulted to : password
+    password: process.env.password || 'password',
+    database: process.env.db || 'bucketlist_db',
+});
+
+
+
 
 // Make connection.
 connection.connect(function (err) {

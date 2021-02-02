@@ -39,10 +39,10 @@ $(function () {
         );
     });
 
-    $(".delete-cat").on("click", function (event) {
+    $(".delete-bucketlist").on("click", function (event) {
         var id = $(this).data("id");
 
-        $.ajax("/api/cats/" + id);
+        $.ajax("/api/bucketlist/" + id);
         type: "DELETE"
     }).then(
         function () {
