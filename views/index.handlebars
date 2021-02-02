@@ -1,0 +1,38 @@
+<h1>Post Pandemic Bucket List!</h1>
+
+<h2>Bucketlist Items!</h2>
+
+<ul>
+    {{#each bucketItem}}
+    {{#unless done}}
+    {{> bucketlist/bucketlist-block done=true}}
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<h2>Bucketlists Items I HAVEN'T ACCOMPLISHED</h2>
+
+<ul>
+    {{#each bucketItem}}
+    {{#if done}}
+    {{> bucketlist/bucketlist-block done=false}}
+    {{/if}}
+    {{/each}}
+</ul>
+
+<h2>Add a bucketlist item!</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="bli">Bucket List Item: </label>
+        <input type="text" id="bli" name="bucketItem">
+    </div>
+
+    <div class="form-group">
+        <label for="done">Done?</label><br>
+        <input type="radio" name="done" value="1" checked> Not Done!<br>
+        <input type="radio" name="done" value="0"> Done!
+    </div>
+
+    <button type="submit">Add item!</button>
+</form>

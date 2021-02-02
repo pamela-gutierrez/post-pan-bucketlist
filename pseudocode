@@ -12,6 +12,11 @@ Ex. id - 1     VEGAN BURGER    BOOLEAN
 
 copy all of this into mysql workbench.
 
+CONFIG SETUP:
+Create the methods that will execute the necessary MySQL commands in the controllers.
+selectAll()
+insertOne()
+updateOne()
 
 HTML SETUP (main.handlebars & index.handlebars)
 
@@ -21,6 +26,8 @@ Use triple mustache to add {{{ body }}} body
 
 in index.html:
 add headings are create empty lists where burgers will appear.
+each burgers should have:
+
 
 List 1:
 Burgers you want to eat
@@ -36,3 +43,10 @@ The burgers will be "pushed" to this list.
 
 
 
+
+
+Each added burger needs to appear in the left side and also have it's own button. 
+
+clicking on that button will push that burger to the right side aka "burgers eaten" list
+
+The buger that has been eaten will be deleted from the "burgers to eat" list once it has been devoured and moved to the "burgers eaten" list

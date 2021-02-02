@@ -5,7 +5,7 @@ USE bucketlist_db;
 
 CREATE TABLE bucketlist (
     id int NOT NULL AUTO_INCREMENT,
-    bucketlist_item VARCHAR (300) NOT NULL,
-    carpe_diem BOOLEAN DEFAULT false,
+    bucketlists VARCHAR (300) NOT NULL,
+    done BOOLEAN DEFAULT false,
     PRIMARY KEY (id)
 );
