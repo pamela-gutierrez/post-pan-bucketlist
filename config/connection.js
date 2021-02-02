@@ -1,17 +1,34 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-// for local testing
-// var connection = mysql.createConnection({
-//     host: "localhost",
+
+// if (process.env.JAWSDB_URL) {
+//   connection = mysql.createConnection(process.env.JAWSDB_URL);
+// } else {
+//   connection = mysql.createConnection({
+//     host: “localhost”,
 //     port: 3306,
-//     user: "root",
-//     password: "password",
-//     database: "bucketlist_db"
-// });
+//     user: “root”,
+//     password: “password”,
+//     database: “burgers_db”
+//   });
+// }
+
+
+
+
+
+// for local testing
+var connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "password",
+    database: "bucketlist_db"
+});
 
 // for Heroku
-var connection = mysql.createConnection(process.env.JAWSDB_URL);
+// var connection = mysql.createConnection(process.env.JAWSDB_URL);
 
 
 // const connection = mysql.createConnection({

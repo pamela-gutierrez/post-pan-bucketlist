@@ -24,7 +24,7 @@ $(function () {
 
         var newBucketlist = {
             bucketItem: $("#bli").val().trim(),
-            done: $("[bucketItem=done]:checked").val().trim()
+            done: $("[name=done]:checked").val().trim()
         };
 
         // Send the POST request.
@@ -39,15 +39,15 @@ $(function () {
         );
     });
 
-    $(".delete-bucketlist").on("click", function (event) {
-        var id = $(this).data("id");
+    //     $(".delete-bucketlist").on("click", function (event) {
+    //         var id = $(this).data("id");
 
-        $.ajax("/api/bucketlist/" + id);
-        type: "DELETE"
-    }).then(
-        function () {
-            console.log("deleted bucketlist item", id);
-            location.reload();
-        }
-    );
+    //         $.ajax("/api/bucketlist/" + id);
+    //         type: "DELETE"
+    //     }).then(
+    //         function () {
+    //             console.log("deleted bucketlist item", id);
+    //             location.reload();
+    //         }
+    //     );
 });
