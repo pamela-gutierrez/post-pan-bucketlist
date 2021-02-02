@@ -11,17 +11,17 @@ var mysql = require("mysql");
 // });
 
 // for Heroku
-// var connection = mysql.createConnection(process.env.JAWSDB_URL);
+var connection = mysql.createConnection(process.env.JAWSDB_URL);
 
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-    host: process.env.host || 'localhost',
-    port: 3306,
-    user: process.env.user || 'root',
-    // NOTE: Be sure to add your MySQL password here! we defaulted to : password
-    password: process.env.password || 'password',
-    database: process.env.db || 'bucketlist_db',
-});
+
+// const connection = mysql.createConnection({
+//     host: process.env.host || 'localhost',
+//     port: 3306,
+//     user: process.env.user || 'root',
+//     // NOTE: Be sure to add your MySQL password here! we defaulted to : password
+//     password: process.env.password || 'password',
+//     database: process.env.db || 'bucketlist_db',
+// });
 
 
 
