@@ -38,16 +38,4 @@ $(function () {
             }
         );
     });
-
-    //     $(".delete-bucketlist").on("click", function (event) {
-    //         var id = $(this).data("id");
-
-    //         $.ajax("/api/bucketlist/" + id);
-    //         type: "DELETE"
-    //     }).then(
-    //         function () {
-    //             console.log("deleted bucketlist item", id);
-    //             location.reload();
-    //         }
-    //     );
 });
