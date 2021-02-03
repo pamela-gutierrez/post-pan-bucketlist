@@ -10,8 +10,8 @@ Nearly a year into the pandemic, everyone is eager for a little normalcy. This s
 * [Git Hub](https://github.com/)
 * [JavaScript](https://www.javascript.com/)
 * [MySQL](https://www.mysql.com/products/workbench/)
-* [Express]
-* [Node]
+* [Express](https://expressjs.com/)
+* [Node](https://nodejs.org/en/)
 *  Git - used to track changes to code
 ______________________________________________________________________________
   
@@ -42,14 +42,12 @@ ______________________________________________________________________________
 ### **Author Links**
 
 * **PAMELA GUTIERREZ**
-* **UC Berkeley Coding Bootcamp**
-  
 - [Link to Portfolio Site](https://pamela-gutierrez.github.io/updated-portfolio/)
 - [Link to Github](https://github.com/pamela-gutierrez) 
 - [Link to LinkedIn](www.linkedin.com/in/pamela-gutierrez)
 
-
-
+* **UC Berkeley Coding Bootcamp**
+  
 ______________________________________________________________________________
 
 #### **License**
