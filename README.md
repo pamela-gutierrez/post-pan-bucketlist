@@ -3,7 +3,7 @@
 Nearly a year into the pandemic, everyone is eager for a little normalcy. This site allows users to dream of their post-pandemic life by creating their personalized bucketlists. It also allows the user to update their bucketlist with the "carpe diem" button which switches items from the "to-do" column to the "done" column.
 
 ![Alt Text](bucketlist.gif)
-* [Deployed Link](https://drive.google.com/file/d/1EGc6n-4snmD368iOmSafDcfqN8qh6aUw/view)
+* [Deployed Link](https://cryptic-falls-03491.herokuapp.com/)
 
 ## **Built With**
 * [HTML](https://developer.mozihlla.org/en-US/docs/Web/HTML)
